@@ -1,4 +1,3 @@
-# prompt_builder.py
 
 EXIT_KEYWORDS = ["quit", "exit", "bye", "goodbye", "stop", "end"]
 

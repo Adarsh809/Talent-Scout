@@ -1,14 +1,11 @@
-# llm_client.py
 import os
 from groq import Groq
 from typing import List, Dict
 from dotenv import load_dotenv
 
-# Load .env from project root (and parents)
 load_dotenv()
 
-GROQ_MODEL = "llama-3.3-70b-versatile"  # or any available LLaMA model id
-
+GROQ_MODEL = "llama-3.3-70b-versatile"  
 class GroqLlamaClient:
     """
     Thin wrapper around Groq chat.completions API for LLaMA.
