@@ -10,5 +10,6 @@ wheels/
 .venv
 
 .env
+candidate_data.json
 
 
