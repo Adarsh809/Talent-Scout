@@ -2,6 +2,8 @@
 
 An intelligent AI-powered chatbot designed to streamline the initial screening process for technology recruitment. Built using Streamlit and powered by Groq's LLaMA 3.3 70B model, this assistant conducts conversational interviews to gather candidate information and assess technical proficiency.
 
+**Demo Video:** https://drive.google.com/file/d/1ulngtIlPFYNVMi9djDuZm89hTloEqPHb/view?usp=sharing
+
 ---
 
 ## Project Overview
