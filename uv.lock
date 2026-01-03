@@ -1219,9 +1219,9 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "groq", specifier = ">=1.0.0" },
-    { name = "python-dotenv", specifier = ">=1.2.1" },
-    { name = "streamlit", specifier = ">=1.52.2" },
+    { name = "groq", specifier = ">=0.5.0" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
+    { name = "streamlit", specifier = ">=1.32.0" },
 ]
 
 [[package]]

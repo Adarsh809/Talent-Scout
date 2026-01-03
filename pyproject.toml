@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "groq>=1.0.0",
-    "python-dotenv>=1.2.1",
-    "streamlit>=1.52.2",
+    "groq>=0.5.0",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.32.0",
 ]

@@ -48,6 +48,15 @@ def update_candidate_state_from_text(user_text: str, last_assistant_text: str | 
     c = st.session_state.candidate
     q = last_assistant_text.lower()
 
+    # IGNORE GREETINGS / NON-SPECIFIC RESPONSES
+    greeting_words = ['hi', 'hello', 'hey', 'hii', 'namaste', 'good', 'morning', 'evening']
+    if len(text.split()) <= 2 and any(word in text for word in greeting_words):
+        return  # Don't map greetings to any field!
+    
+    # Detect update requests (don't capture them as data)
+    if any(word in text.lower() for word in ['change', 'update', 'correct']):
+        return  # Let LLM handle the update request
+
     if "full name" in q and not c["Full Name"]:
         c["Full Name"] = text
     elif "email address" in q and not c["Email Address"]:

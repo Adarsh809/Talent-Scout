@@ -4,7 +4,7 @@ An intelligent AI-powered chatbot designed to streamline the initial screening p
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 TalentScout is a conversational hiring assistant chatbot that:
 
@@ -19,7 +19,7 @@ The chatbot uses advanced prompt engineering techniques to ensure coherent, cont
 
 ---
 
-## 🎯 Key Capabilities
+## Key Capabilities
 
 ### Information Gathering
 The assistant systematically collects seven essential fields:
@@ -44,7 +44,7 @@ The assistant systematically collects seven essential fields:
 
 ---
 
-## 🚀 Installation Instructions
+## Installation Instructions
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -95,7 +95,7 @@ The application will open automatically in your default browser at `http://local
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Starting a Session
 1. Launch the application using `streamlit run app.py`
@@ -130,22 +130,10 @@ Assistant: Hello! I'm TalentScout, your AI hiring assistant. I'll be collecting
 some basic information and asking technical questions based on your tech stack. 
 Let's begin! What is your FULL NAME?
 
-User: John Doe## 🔧 Technical Details
-
-### Architecture
-
-The application follows a modular architecture with clear separation of concerns:
-
+User: John Doe
 ```
-talentscout-hiring-assistant/
-├── app.py                  # Main Streamlit application & UI logic
-├── llm_client.py           # LLM API client (Groq LLaMA wrapper)
-├── prompt_builder.py       # System prompts & conversation context management
-├── storage.py              # Data persistence (JSON file storage)
-├── requirements.txt        # Python dependencies
-├── .env                    # API keys (not committed to Git)
-└── candidate_data.json     # Stored candidate records
-```
+
+## Technical Details
 
 ### Libraries & Frameworks
 
@@ -217,7 +205,7 @@ talentscout-hiring-assistant/
 
 ---
 
-## 🎨 Prompt Design
+## Prompt Design
 
 ### System Prompt Strategy
 
@@ -302,43 +290,8 @@ over the course of the conversation (not all at once)."
 
 ---
 
-## 🧩 Project Structure
 
-```
-talentscout-hiring-assistant/
-│
-├── app.py                      # Main Streamlit application
-│   ├── UI configuration
-│   ├── Session state management
-│   ├── Chat message rendering
-│   ├── User input handling
-│   └── Candidate state updates
-│
-├── llm_client.py               # LLM API wrapper
-│   └── GroqLlamaClient class
-│       ├── API key management
-│       ├── Chat completion interface
-│       └── Response parsing
-│
-├── prompt_builder.py           # Prompt engineering
-│   ├── BASE_SYSTEM_PROMPT
-│   ├── build_system_message()
-│   ├── build_hiring_context_message()
-│   └── contains_exit_keyword()
-│
-├── storage.py                  # Data persistence
-│   ├── load_all_candidates()
-│   └── save_candidate()
-│
-├── requirements.txt            # Dependencies
-├── .env                        # API keys (not in repo)
-├── .gitignore                  # Excluded files
-└── candidate_data.json         # Stored records
-```
-
----
-
-## 🚧 Challenges & Solutions
+## Challenges & Solutions
 
 ### Challenge 1: Context Management Across Turns
 
@@ -418,7 +371,7 @@ talentscout-hiring-assistant/
 
 ---
 
-## 📊 Data Privacy & Compliance
+## Data Privacy & Compliance
 
 ### Data Handling Practices
 
@@ -447,7 +400,7 @@ For production deployment, implement:
 
 ---
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 ### Planned Features
 - [ ] **Multi-language Support**: Internationalization for global recruitment
@@ -467,50 +420,6 @@ For production deployment, implement:
 - [ ] **Monitoring**: Logging and observability (e.g., Datadog, Sentry)
 - [ ] **Unit Tests**: Comprehensive test coverage
 - [ ] **CI/CD Pipeline**: Automated testing and deployment
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is created as part of an assignment for TalentScout recruitment agency. All rights reserved.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
----
-
-## 🙏 Acknowledgments
-
-- Assignment provided by TalentScout recruitment agency
-- Groq for providing fast LLM inference infrastructure
-- Streamlit for the excellent web framework
-- Meta AI for LLaMA 3.3 70B model
-
----
-
-## 📞 Support
-
-For questions or issues:
-1. Check the [Issues](https://github.com/yourusername/talentscout-hiring-assistant/issues) page
-2. Create a new issue if your question isn't answered
-3. Contact: your.email@example.com
 
 ---
 
